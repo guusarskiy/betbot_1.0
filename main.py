@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 import psycopg2
-import webbrowser11
+import webbrowser
 import math
 
 # host = 'localhost'
@@ -29,8 +29,9 @@ botArg = telebot.TeleBot('6561545637:AAFgVEB-kK92iG5-bYLysYg8sSIGGqH0ur8')
 def roflophoto(message):
     photo = open('/Users/guusarskiy/Downloads/IMG_2885.jpg', 'rb')
 
-    botArg.reply_to(message, 'опа наебочка))))))')
-    botArg.send_photo(message.chat.id, photo)
+    if (message.from_user.id != kosarID):
+        botArg.reply_to(message, 'опа наебочка))))))')
+        botArg.send_photo(message.chat.id, photo)
 
 @botArg.message_handler(commands=['create'])
 def create(message):
