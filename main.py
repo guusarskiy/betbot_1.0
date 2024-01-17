@@ -30,7 +30,7 @@ def roflophoto(message):
     photo = open('/Users/guusarskiy/Downloads/IMG_2885.jpg', 'rb')
 
     if (message.from_user.id != kosarID):
-        botArg.reply_to(message, 'опа наебочка)))))))')
+        botArg.reply_to(message, 'опа наебочка))))))')
         botArg.send_photo(message.chat.id, photo)
 
 @botArg.message_handler(commands=['create'])
