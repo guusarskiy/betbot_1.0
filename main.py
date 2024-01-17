@@ -35,7 +35,7 @@ def roflophoto(message):
 
 @botArg.message_handler(commands=['create'])
 def create(message):
-    if ((message.from_user.id == kosarID) & (message.from_user.id == sozikID)):
+    if (message.from_user.id == kosarID):
         global currentID
         currentID = message.from_user.id
 
