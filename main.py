@@ -1,7 +1,7 @@
 import telebot
 from telebot import types
 import psycopg2
-import webbrowser
+import webbrowser11
 import math
 
 # host = 'localhost'
